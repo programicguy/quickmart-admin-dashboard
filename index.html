@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkup external css file  -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Responsive Sidebar</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="">QuickMart <span class="logo-v">1.0</span></a>
+            </div>
+            <div class="toggle-nav" id="toggle-nav">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="search-bar">
+                <div class="search-box">
+                    <div class="search-icon">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="search-input">
+                        <input type="text" placeholder="Search..." id="search-terms">
+                    </div>
+                    <div class="search-shortcut">
+                        <p>Ctrl K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-quick-info">
+                <div class="account-notification">
+                    <p><i class='bx bx-bell'></i></p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar-dropdown">
+                        <img class="user-avatar" src="https://avatars.githubusercontent.com/u/72505385?v=4" alt="">
+                        <div class="dropdown-content">
+                            <div class="user-details">
+                                <h4 class="user-name">Ahmed sohel</h4>
+                                <p class="user-role">Admin</p>
+                            </div>
+                            <a href="#">
+                                <i class='bx bx-edit-alt'></i>
+                                <span>Edit Profile</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bx-moon'></i>
+                                <span class="item-name">Dark Mode</span>
+                                <!-- <i class='bx bx-sun'></i> -->
+
+                            </a>
+                            <a href="#">
+                                <i class='bx bx-log-in-circle'></i>
+                                <span>Log out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <aside>
+                <div class="sidebar">
+                    <!-- nav bar  -->
+                    <nav>
+                        <div class="main-nav">
+                            <div class="menu">
+                                <p class="title">Main</p>
+                                <ul>
+                                    <li class="active">
+                                        <a href="#">
+                                            <i class='bx bx-home-alt'></i>
+                                            <span class="item-name">Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class='bx bx-purchase-tag'></i>
+                                            <span class="item-name">Products</span>
+                                            <i class='arrow bx bx-chevron-down'></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Active</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Collections</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Draft</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Schedule</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class='bx bx-store'></i>
+                                            <span class="item-name">Orders</span>
+                                            <i class='arrow bx bx-chevron-down'></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Draft</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Completed</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class='bx bx-group'></i>
+                                            <span class="item-name">Customers</span>
+                                            <i class='arrow bx bx-chevron-down'></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Active</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="item-name">Suspend</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class='bx bx-trending-up'></i>
+                                            <span class="item-name">Analytics</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class='bx bx-heart'></i>
+                                            <span class="item-name">Wishlist</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Settings menu  -->
+                            <div class="menu">
+                                <p class="title">Settings</p>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class='bx bx-cog'></i>
+                                            <span class="item-name">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class='bx bx-credit-card'></i>
+                                            <span class="item-name">Your Plan</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Account menu  -->
+                        <div class="menu account-settings">
+                            <p class="title">Account</p>
+                            <div class="help">
+                                <a href="" class="help-link">
+                                    <i class='bx bx-help-circle'></i>
+                                    <span class="">Help</span>
+                                </a>
+                            </div>
+                            <div class="help">
+                                <a href="" class="help-link">
+                                    <i class='bx bx-help-circle'></i>
+                                    <span class="">Support</span>
+                                </a>
+                            </div>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="overlay"></div>
+            </aside>
+
+            <div class="content" id="content">
+                <!-- Page content -->
+                <div class="homepage-container">
+                    <div class="dashboard-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="bx bx-dollar-circle"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Sales</h3>
+                                <p>$215,470</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="bx bx-group"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Customers</h3>
+                                <p>1,032</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="bx bx-purchase-tag"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Orders</h3>
+                                <p>2,340</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="bx bx-dollar-circle"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Expenses</h3>
+                                <p>$-1,340</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="store-tips">
+                        <div class="tips-title">
+                            <p>Next Things to do</p>
+                        </div>
+                        <div class="quick-tips" id="quick-tips-tab">
+                            <div class="tip">
+                                <div class="tip-title">
+                                    <h3>How to start</h3>
+                                    <div class="tip-icon">
+                                        <div class="action-icon">
+                                            <i class='bx bx-dots-vertical-rounded' id="action-btn"></i>
+                                            <div class="action-details">
+                                                <p id="dismiss-btn"><i class='bx bx-x'></i> Dismiss</p>
+                                                <p><i class='bx bx-message-detail'></i> Give Feedback</p>
+                                            </div>
+                                        </div>
+                                        <i class='bx bx-chevron-down' id="expand-icon"></i>
+                                    </div>
+                                </div>
+                                <p class="tip-description">Use this personalized guide to get your store up and running.</p>
+                                <p class="completed-info">1/4 completed</p>
+                                <div class="hidden-info" id="expand-info">
+                                    <p><i class='bx bxs-check-circle'></i> Complete your profile</p>
+                                    <p><i class='bx bx-check-circle'></i> Add payment method</p>
+                                    <p><i class='bx bx-check-circle'></i> Setup API or store</p>
+                                    <p><i class='bx bx-check-circle'></i> Start testing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- quick tip tab 2 -->
+                        <div class="quick-tips" id="quick-tips-tab">
+                            <div class="tip">
+                                <div class="tip-title">
+                                    <h3>Get inspired to launch your busines</h3>
+                                    <div class="tip-icon">
+                                        <div class="action-icon">
+                                            <i class='bx bx-dots-vertical-rounded' id="action-btn"></i>
+                                            <div class="action-details">
+                                                <p id="dismiss-btn"><i class='bx bx-x'></i> Dismiss</p>
+                                                <p><i class='bx bx-message-detail'></i> Give Feedback</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip-description">
+                                    <p>Browse existing Shopify stores to inspire your own approach to building a brand and launching a business that stands
+                                    out.</p>
+                                    <a href="">Learn More</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- quick tab 3  -->
+                        <div class="quick-tips" id="quick-tips-tab">
+                            <div class="tip">
+                                <div class="tip-title">
+                                    <h3>Write product descriptions in seconds</h3>
+                                    <div class="tip-icon">
+                                        <div class="action-icon">
+                                            <i class='bx bx-dots-vertical-rounded' id="action-btn"></i>
+                                            <div class="action-details">
+                                                <p id="dismiss-btn"><i class='bx bx-x'></i> Dismiss</p>
+                                                <p><i class='bx bx-message-detail'></i> Give Feedback</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip-description">
+                                    <p>Automatically generate unique and compelling descriptions with Shopify Magic. Add a new product description or edit an
+                                    existing one to get started.</p>
+                                    <a href="">Try it now</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- quick tab 4  -->
+                        <div class="quick-tips" id="quick-tips-tab">
+                            <div class="tip">
+                                <div class="tip-title">
+                                    <h3>Write product descriptions in seconds</h3>
+                                    <div class="tip-icon">
+                                        <div class="action-icon">
+                                            <i class='bx bx-dots-vertical-rounded' id="action-btn"></i>
+                                            <div class="action-details">
+                                                <p id="dismiss-btn"><i class='bx bx-x'></i> Dismiss</p>
+                                                <p><i class='bx bx-message-detail'></i> Give Feedback</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tip-description">
+                                    <p>Automatically generate unique and compelling descriptions with Shopify Magic. Add a new product description or edit an
+                                    existing one to get started.</p>
+                                    <a href="">Try it now</a>
+                                </div>
+                                
+                            </div>
+                            <div class="store-tips-title">
+                                <p><i class='bx bx-check-circle'></i> All caught up</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- linkup external js file  -->
+    <script src="../app.js"></script>
+</body>
+
+</html>
